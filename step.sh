@@ -15,6 +15,8 @@ envman add --key EXAMPLE_STEP_OUTPUT --value 'the value you want to share'
 # You can find more usage examples on envman's GitHub page
 #  at: https://github.com/bitrise-io/envman
 
+./bin/macos/arm64/ios-upload --help
+
 #
 # --- Exit codes:
 # The exit code of your Step is very important. If you return
