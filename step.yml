@@ -67,11 +67,11 @@ toolkit:
 
 
 inputs:
-  - EMBRACE_APP:
+  - EMBRACE_APP: $EMBRACE_APP
     opts:
       title: "Embrace App ID"
       is_required: true
-  - EMBRACE_API_TOKEN:
+  - EMBRACE_API_TOKEN: $EMBRACE_API_TOKEN
     opts:
       title: "Embrace API Token"
       is_required: true
