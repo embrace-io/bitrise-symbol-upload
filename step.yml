@@ -2,11 +2,19 @@
 # Embrace Symbol Upload for Bitrise
 #
 title: |-
-  Embrace Symbol Upload
+  Embrace iOS Symbol Upload
 summary: |
-  Upload debug symbols to Embrace
+  Upload iOS debug symbols to Embrace through Bitrise CI integration
 description: |
-  Upload debug symbols to Embrace
+  Upload iOS debug symbols to Embrace through Bitrise CI. This will make your integration with Embrace more efficient. Environment Variables are supported via the upload tool.
+
+  Env Vars:
+  ---------
+  EMBRACE_APP: Your Embrace app idenifier
+  EMBRACE_API_TOKEN: Your Embrace upload API token
+
+
+
 website: https://github.com/embrace-io/bitrise-step-embrace-symbol-upload
 source_code_url: https://github.com/embrace-io/bitrise-step-embrace-symbol-upload
 support_url: https://github.com/embrace-io/bitrise-step-embrace-symbol-upload/issues
