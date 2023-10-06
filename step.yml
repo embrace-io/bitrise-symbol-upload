@@ -12,12 +12,9 @@ description: |
   ---------
   EMBRACE_APP: Your Embrace app idenifier
   EMBRACE_API_TOKEN: Your Embrace upload API token
-
-
-
-website: https://github.com/embrace-io/bitrise-step-embrace-symbol-upload
-source_code_url: https://github.com/embrace-io/bitrise-step-embrace-symbol-upload
-support_url: https://github.com/embrace-io/bitrise-step-embrace-symbol-upload/issues
+website: https://github.com/embrace-io/bitrise-symbol-upload
+source_code_url: https://github.com/embrace-io/bitrise-symbol-upload
+support_url: https://github.com/embrace-io/bitrise-symbol-upload/issues
 
 project_type_tags:
   - ios
