@@ -4,14 +4,15 @@
 title: |-
   Embrace iOS Symbol Upload
 summary: |
-  Upload iOS debug symbols to Embrace through Bitrise CI integration
+  Upload iOS debug symbols to Embrace from Bitrise CI integration
 description: |
-  Upload iOS debug symbols to Embrace through Bitrise CI. This will make your integration with Embrace more efficient. Environment Variables are supported via the upload tool.
+  Upload iOS debug symbols to Embrace from Bitrise CI, as described on [https://embrace.io/docs/ios/best-practices/ci-dsym-upload/](https://embrace.io/docs/ios/best-practices/ci-dsym-upload/)
 
-  Env Vars:
-  ---------
-  EMBRACE_APP: Your Embrace app idenifier
-  EMBRACE_API_TOKEN: Your Embrace upload API token
+  Environment Variables
+  ---------------------
+
+  - `EMBRACE_APP`: Embrace App ID (5 characters)
+  - `EMBRACE_API_TOKEN`: Embrace upload API token (32 characters)
 website: https://github.com/embrace-io/bitrise-symbol-upload
 source_code_url: https://github.com/embrace-io/bitrise-symbol-upload
 support_url: https://github.com/embrace-io/bitrise-symbol-upload/issues
@@ -26,7 +27,6 @@ toolkit:
   bash:
     entry_file: step.sh
 
-
 inputs:
   - embrace_app: $EMBRACE_APP
     opts:
@@ -34,10 +34,10 @@ inputs:
       is_required: true
   - embrace_api_token: $EMBRACE_API_TOKEN
     opts:
-      title: "Embrace API Token"
+      title: "Embrace Upload API Token"
       is_required: true
       is_sensitive: true
   - dsym_path: $BITRISE_DSYM_PATH
     opts:
-      title: "DSYM Path"
+      title: "dSYM Path"
       is_required: true
